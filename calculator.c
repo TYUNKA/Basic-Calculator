@@ -9,7 +9,7 @@ int main(){
   for(;;){
     printf("Welcome to the program!\n");
     printf("Enter the first number: ");
-    inputOfInt(&firstNumber, &c1);
+    inputOfInt(&firstNumber);
     printf("Enter the operator: ");
     scanf(" %c", &inputOperator);
     while(!validOperatorCheck(inputOperator)){
@@ -17,7 +17,7 @@ int main(){
     }
     int result;
     printf("Enter the second number: ");
-    inputOfInt(&secondNumber, &c2);
+    inputOfInt(&secondNumber);
     result = ofOperation(firstNumber, secondNumber, inputOperator);
     printf("The result is %d.\n", result);
   }
