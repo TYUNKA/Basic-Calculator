@@ -4,7 +4,6 @@
 int main(){
   printf("************\nSimple Calculator Program\n************");
   int firstNumber, secondNumber = 0;
-  int tempFirst = 0;
   char c1, c2; // for use in the verification of ints 1 and 2 respectively
   char inputOperator;
   for(;;){
