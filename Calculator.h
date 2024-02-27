@@ -29,11 +29,12 @@ int ofOperation(int num1, int num2, char operator){
         return '\0';
     }
 }
-int inputOfInt(int* i, char* c){
-  while(scanf("%d%c", i, c) != 2 || (*c) != '\n'){
+int inputOfInt(int* i){
+  char c;
+  while(scanf("%d%c", i, &c) != 2 || c != '\n'){
     printf("Invalid input! Enter an integer please: ");
-    //while (((*c) = getchar()) != EOF && (*c) != '\n'){};
-    scanf("%[^\n]");
+    //while ((c = getchar()) != EOF && c != '\n'){};
+    scanf("%*[^\n]");
   }
   return *i;
 }
